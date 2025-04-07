@@ -1,7 +1,5 @@
 # Swift Do - Flutter To-Do List App  
 
-![Swift Do Logo](https://via.placeholder.com/150x150.png?text=Swift+Do) <!-- Replace with your actual logo -->  
-
 A modern To-Do List application built with Flutter and Firebase Firestore that helps you manage your tasks efficiently.  
 
 ## ✨ Features  
@@ -20,8 +18,6 @@ A modern To-Do List application built with Flutter and Firebase Firestore that h
 - **🔍 Search Functionality**  
   - Quickly find tasks by title or description  
 
-- **🎨 Modern UI**  
-  - Clean, intuitive interface with dark theme  
 
 ## 🚀 Installation  
 
@@ -33,7 +29,7 @@ A modern To-Do List application built with Flutter and Firebase Firestore that h
 ### Setup Steps  
 1. **Clone the repository**:  
    ```bash
-   git clone https://github.com/your-username/swift-do.git
+   git clone https://github.com/your-username/swift-do.git](https://github.com/Shereena2000/Swift_do.git
    cd swift-do
 Add Firebase configuration:
 
