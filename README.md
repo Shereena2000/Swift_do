@@ -31,51 +31,41 @@ A modern To-Do List application built with Flutter and Firebase Firestore that h
    ```bash
    git clone https://github.com/your-username/swift-do.git](https://github.com/Shereena2000/Swift_do.git
    cd swift-do
-Add Firebase configuration:
+## 🚀 Add Firebase configuration:
 
 Add google-services.json for Android
-
 Add GoogleService-Info.plist for iOS
 
-Install dependencies:
+## Install dependencies:
 
-bash
-Copy
 flutter pub get
 Run the app:
-
-bash
-Copy
 flutter run
-🔥 Firebase Configuration
+
+##  🔥 Firebase Configuration
+
 The app requires Firebase setup:
-
 Create a Firebase project at Firebase Console
-
 Enable Firestore Database
-
 Add your Android/iOS app to the project
-
 Download configuration files and place them in:
-
 android/app/google-services.json
-
 ios/Runner/GoogleService-Info.plist
 
-🛠 Technical Stack
+##  🛠 Technical Stack
 Framework: Flutter
-
 State Management: Provider
-
 Database: Firebase Firestore
-
 UI: Custom design with Material 3
 
-📅 Future Enhancements
+## 📅 Future Enhancements
 Task categories/priority levels
-
 Notifications for due tasks
-
 Offline support
-
 Task sharing functionality
+
+## ✨ Demo Video
+
+https://youtube.com/shorts/rG3X8Lu8gp0
+
+
