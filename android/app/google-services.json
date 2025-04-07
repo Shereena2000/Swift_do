@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "103731830681",
+    "project_id": "swiftdo-5ad68",
+    "storage_bucket": "swiftdo-5ad68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103731830681:android:2fca18e87c5ff09c017d08",
+        "android_client_info": {
+          "package_name": "com.example.swift_do"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2bdYtKshxe78_zHQZN7f9sjlydQyAtkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
