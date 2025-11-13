@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:swift_do/model/todo_model.dart';
 import 'package:swift_do/utils/color_constants.dart';
+import 'package:swift_do/utils/constants.dart';
 
 class TaskTile extends StatelessWidget {
   final TodoModel todo;
@@ -158,6 +159,7 @@ class TaskTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _buildDueDate(),
+            kheight12,
             _buildDescription(),
           ],
         ),
@@ -168,7 +170,7 @@ class TaskTile extends StatelessWidget {
   Widget _buildDueDate() {
     return Text(
       todo.dueDate != null
-          ? DateFormat('MMM dd, yyyy').format(todo.dueDate!)
+          ?  'Due Date : ${DateFormat('MMM dd, yyyy').format(todo.dueDate!)}'
           : '',
       style: TextStyle(
         color: todo.dueDate?.isBefore(DateTime.now()) ?? false

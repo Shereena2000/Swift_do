@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:swift_do/utils/color_constants.dart';
+import 'package:swift_do/utils/constants.dart';
 
 class TaskInputField extends StatelessWidget {
   final TextEditingController controller;
@@ -23,17 +25,18 @@ class TaskInputField extends StatelessWidget {
 
         Row(
           children: [
-            Icon(icon, color: Colors.white, size: 30),
-
+            Icon(icon, color:whiteColor, size: 30),
+kwidth10,
             Expanded(
+           
               child: TextField(
                 controller: controller,
                 maxLength: maxLength,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(color:whiteColor),
                 decoration: InputDecoration(
                   border: InputBorder.none,
-                  counterText: "${controller.text.length}/$maxLength",
-                  counterStyle: TextStyle(color: Colors.white70, fontSize: 12),
+                  counterText: "",
+                 
                 ),
               ),
             ),

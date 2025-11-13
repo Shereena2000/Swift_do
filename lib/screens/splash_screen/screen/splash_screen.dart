@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lottie/lottie.dart';
+import 'package:swift_do/screens/splash_screen/widget/app_lottie.dart';
+import 'package:swift_do/screens/splash_screen/widget/app_tag_line.dart';
+import 'package:swift_do/screens/splash_screen/widget/app_title.dart';
+import 'package:swift_do/screens/splash_screen/widget/loading_indicator.dart';
 import 'package:swift_do/utils/color_constants.dart';
 import 'package:swift_do/utils/constants.dart';
 
@@ -96,19 +100,19 @@ class _SplashScreenState extends State<SplashScreen>
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    _ApLottie(),
+                    AppLottie(),
                     // App Name Text
-                    _AppTitle(),
+                    AppTitle(),
 
                     kheight12,
 
                     // Tagline Text
-                    _AppTagline(),
+                    AppTagline(),
 
                     kheight60,
 
                     // Loading Indicator
-                    _LoadingIndicator(),
+                    LoadingIndicator(),
                   ],
                 ),
               ),
@@ -120,60 +124,10 @@ class _SplashScreenState extends State<SplashScreen>
   }
 }
 
-class _LoadingIndicator extends StatelessWidget {
-  const _LoadingIndicator({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: 40,
-      height: 40,
-      child: CircularProgressIndicator(
-        valueColor: AlwaysStoppedAnimation<Color>(onSurfaceColor),
-        strokeWidth: 3,
-      ),
-    );
-  }
-}
 
-class _AppTagline extends StatelessWidget {
-  const _AppTagline();
 
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      "Your tasks, faster than ever",
-      style: TextStyle(
-        color: onSurfaceColor.withOpacity(0.7),
-        fontSize: 16,
-        letterSpacing: 0.5,
-      ),
-    );
-  }
-}
 
-class _AppTitle extends StatelessWidget {
-  const _AppTitle();
 
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      "Swift Do",
-      style: TextStyle(
-        color: onSurfaceColor,
-        fontSize: 36,
-        fontWeight: FontWeight.bold,
-        letterSpacing: 1.5,
-      ),
-    );
-  }
-}
 
-class _ApLottie extends StatelessWidget {
-  const _ApLottie();
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(child: LottieBuilder.asset("assets/lottie.json"));
-  }
-}
